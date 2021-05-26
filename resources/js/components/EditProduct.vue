@@ -5,14 +5,14 @@
             <div class="col-md-6">
                 <form @submit.prevent="updateProduct">
                     <div class="form-group">
-                        <label>Name</label>
+                        <label>Nom</label>
                         <input type="text" class="form-control" v-model="product.name">
                     </div>
                     <div class="form-group">
-                        <label>Detail</label>
+                        <label>Description</label>
                         <input type="text" class="form-control" v-model="product.detail">
                     </div>
-                    <button type="submit" class="btn btn-primary">Update</button>
+                    <button type="submit" class="btn btn-primary">Mise à jour</button>
                 </form>
             </div>
         </div>

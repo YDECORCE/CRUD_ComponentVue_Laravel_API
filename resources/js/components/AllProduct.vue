@@ -1,14 +1,14 @@
 <template>
     <div style="position:absolute; width:100%">
-        <h2 class="text-center">Products List</h2>
+        <h2 class="text-center">Liste des produits</h2>
  
         <table class="table">
             <thead>
             <tr>
                 <th>ID</th>
-                <th>Name</th>
-                <th>Detail</th>
-                <!-- <th>Actions</th> -->
+                <th>Nom</th>
+                <th>Description</th>
+                <th>Actions</th>
             </tr>
             </thead>
             <tbody>
@@ -18,8 +18,8 @@
                 <td>{{ product.detail }}</td>
                 <td>
                     <div class="btn-group" role="group">
-                        <router-link :to="{name: 'edit', params: { id: product.id }}" class="btn btn-success">Edit</router-link>
-                        <button class="btn btn-danger" @click="deleteProduct(product.id)">Delete</button>
+                        <router-link :to="{name: 'edit', params: { id: product.id }}" class="btn btn-success">Editer</router-link>
+                        <button class="btn btn-danger" @click="deleteProduct(product.id)">Supprimer</button>
                     </div>
                 </td>
             </tr>

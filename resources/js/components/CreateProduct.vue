@@ -1,18 +1,18 @@
 <template>
-     <div style="position:absolute; width:100%; background-color:#fff">
-        <h3 class="text-center">Create Product</h3>
+     <div style="position:absolute; width:100%">
+        <h3 class="text-center">Creation Produit</h3>
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <form @submit.prevent="addProduct">
                     <div class="form-group">
-                        <label>Name</label>
+                        <label>Nom</label>
                         <input type="text" class="form-control" v-model="product.name">
                     </div>
                     <div class="form-group">
-                        <label>Detail</label>
+                        <label>Description</label>
                         <input type="text" class="form-control" v-model="product.detail">
                     </div>
-                    <button type="submit" class="btn btn-primary">Create</button>
+                    <button type="submit" class="btn btn-primary">Enregistrer</button>
                 </form>
             </div>
         </div>
